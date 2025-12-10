@@ -4,7 +4,7 @@ This repository contains the core scripts used in the MIDL 2026 submission paper
 
 Current runnable scripts:
 
-- `train_2d_reconstructer.py` — Train ENF/CNF models for 2D CMR reconstruction  
+- `train_2d_reconstructer.py` — Train ENF/CNF models for CMR reconstruction  
 - `create_latent_dataset.py` — Extract ENF latent point clouds or CNF global latents  
 - `endpoint_classification.py` — Train downstream classifiers for clinical endpoints  
 
