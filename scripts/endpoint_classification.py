@@ -13,14 +13,14 @@ import matplotlib.pyplot as plt
 import wandb
 
 # Custom imports
-from experiments.datasets.biobank_latent_endpoint_dataset import create_dataloaders
+from src.datasets.biobank_latent_endpoint_dataset import create_dataloaders
 
-from enf.model import EquivariantNeuralField
-from enf.bi_invariants import TranslationBI
-from enf.utils import create_coordinate_grid, initialize_latents
+from src.enf.model import EquivariantNeuralField
+from src.enf.bi_invariants import TranslationBI
+from src.enf.utils import create_coordinate_grid, initialize_latents
 
-from experiments.downstream_models.transformer_enf import TransformerClassifier
-from experiments.downstream_models.egnn import EGNNClassifier
+from src.downstream.transformer_enf import TransformerClassifier
+from src.downstream.egnn import EGNNClassifier
 
 import numpy as np  # For numpy operations
 import sklearn.metrics  # For AUROC computation

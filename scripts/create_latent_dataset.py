@@ -23,14 +23,12 @@ flax.training.checkpoints.CHECKPOINT_GDA = False
 import h5py
 
 # Custom imports
-from experiments.datasets import get_dataloaders
-from enf.model import EquivariantNeuralField
-from enf.bi_invariants import TranslationBI
-from enf.utils import create_coordinate_grid, initialize_latents
+from src.datasets import get_dataloaders
+from src.enf.model import EquivariantNeuralField
+from src.enf.bi_invariants import TranslationBI
+from src.enf.utils import create_coordinate_grid, initialize_latents
 
 from tqdm import tqdm
-
-from experiments.downstream_models.transformer_enf import TransformerClassifier
 
 jax.config.update("jax_default_matmul_precision", "highest")
 

@@ -83,7 +83,7 @@ class BiobankEndpoints(Dataset):
             if H != 77 or W != 77:
                 print(f"Skipping {patient_path}: unexpected spatial shape ({H}, {W})")
                 continue
-            0
+
             # Iterate over timesteps
             for t in range(T):
                 for z in range(Z):

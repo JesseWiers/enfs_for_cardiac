@@ -1,0 +1,32 @@
+# JAX with CUDA support — install BEFORE the rest.
+# Replace cuda12 with cuda11 if your cluster uses CUDA 11.x.
+# See https://jax.readthedocs.io/en/latest/installation.html
+jax[cuda12_pip]
+jaxlib
+
+# Neural network / training
+flax
+optax
+
+# Configuration
+ml_collections
+absl-py
+
+# Data loading (PyTorch CPU-only wheels are sufficient for DataLoader use)
+torch
+torchvision
+
+# Medical imaging I/O
+nibabel
+
+# HDF5
+h5py
+
+# Experiment tracking
+wandb
+
+# Utilities
+tqdm
+numpy
+matplotlib
+scikit-learn
